@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block contenido %}
+<h3>Registrar Antena</h3>
+
+<form method="POST">
+    <input class="form-control mb-2" name="nombre" placeholder="Nombre de la antena" required>
+    <input class="form-control mb-2" name="ubicacion" placeholder="Ubicación exacta" required>
+    <input class="form-control mb-2" name="frecuencia" placeholder="Frecuencia (MHz)" required>
+    <input class="form-control mb-2" name="potencia" placeholder="Potencia (W)" required>
+    <input class="form-control mb-2" name="proveedor" placeholder="Proveedor" required>
+    <button class="btn btn-primary">Registrar</button>
+</form>
+{% endblock %}
